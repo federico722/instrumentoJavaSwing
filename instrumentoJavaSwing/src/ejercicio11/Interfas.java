@@ -16,7 +16,7 @@ import javax.swing.JButton;
 
 public class Interfas  implements MouseListener, ActionListener{
 
-	private JFrame frame;
+    JFrame frame;
 	private JTextField txtNumero;
 	JButton btnBorrar;
 	JLabel etiNueve;
@@ -60,6 +60,10 @@ public class Interfas  implements MouseListener, ActionListener{
 		frame.setBounds(100, 100, 577, 414);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		
+		frame.setTitle("VENTANA AGREGAR NUMEROS ");
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
 		
 		etiUna = new JLabel("1");
 		etiUna.setHorizontalAlignment(SwingConstants.CENTER);
